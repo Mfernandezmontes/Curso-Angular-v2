@@ -1,0 +1,40 @@
+<!DOCTYPE  html>
+<html lang="es" ng-app="app">
+    <head>
+    <meta charset="utf-8">
+        <title>Vídeo 10 sobre Angularjs, crear un TODO con ngstorage</title>
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/ngstorage/ngstorage.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" ng-controller="storageController">
+                <h1 class="heading text-center">Lista de Tareas con $localstorage utilizando ngstorage</h1><hr>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8">
+                        <p>
+                            <a href="" class="btn btn-danger" data-ng-click="remove()">
+                                Eliminar tareas seleccionadas
+                            </a>
+                        </p>
+                    </div>
+
+                    <ul class="col-md-8">
+                        <li data-ng-repeat="todo in todos">
+                            <input type="checkbox" data-ng-model="todo.bool">
+                            <span>{{ todo.val }}</span>
+                        </li>
+                    </ul>
+
+                    <form data-ng-submit="addTodo()" class="col-md-8">
+                        <input type="text" data-ng-model="todoValue" class="form-control" placeholder="Añadir tarea" />
+                        <br />
+                        <input type="submit" class="btn btn-warning pull-right" value="Añadir nueva tarea" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

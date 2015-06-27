@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1, "category": "Detalles", "name": "Campanas", "price": 0.9, "picture": "imgs/campanas.jpg", "desc": "Producto de nuestra tienda sobre campanas"
+    },
+    {
+        "id": 2, "category": "Detalles", "name": "Carrito", "price": 1, "picture": "imgs/carrito.jpg", "desc": "Producto de nuestra tienda sobre carritos"
+    },
+    {
+        "id": 3, "category": "Detalles", "name": "Carrito con chupetes", "price": 1.2, "picture": "imgs/carrito_chupetes.jpg", "desc": "Producto de nuestra tienda sobre chupetes"
+    },
+    {
+        "id": 4, "category": "Detalles", "name": "Cesta", "price": 1.6, "picture": "imgs/cesta.jpg", "desc": "Producto de nuestra tienda sobre cestas"
+    },
+    {
+        "id": 5, "category": "Detalles", "name": "Mini cesta", "price": 2, "picture": "imgs/cestita.jpg", "desc": "Producto de nuestra tienda sobre cestas pequeñas"
+    },
+    {
+        "id": 6, "category": "Detalles", "name": "Enfermera", "price": 3, "picture": "imgs/enfermera.jpg", "desc": "Producto de nuestra tienda sobre efermeras"
+    },
+    {
+        "id": 7, "category": "Detalles", "name": "Gatitos", "price": 2.9, "picture": "imgs/gatitos.jpg", "desc": "Producto de nuestra tienda sobre gatitos"
+    },
+    {
+        "id": 8, "category": "Detalles", "name": "Perritos", "price": 21.5, "picture": "imgs/perritos.jpg", "desc": "Producto de nuestra tienda sobre perritos"
+    },
+    {
+        "id": 9, "category": "Detalles", "name": "Profesoras", "price": 11.5, "picture": "imgs/profesora.jpg", "desc": "Producto de nuestra tienda sobre profesoras"
+    },
+    {
+        "id": 10, "category": "Detalles", "name": "Vestido", "price": 1.8, "picture": "imgs/vestido.jpg", "desc": "Producto de nuestra tienda sobre vestidos"
+    },
+    {
+        "id": 11, "category": "Detalles", "name": "Otros", "price": 0.5, "picture": "imgs/otros.jpg", "desc": "Producto de nuestra tienda sobre otros"
+    },
+    {
+        "id": 12, "category": "Detalles", "name": "Carrito Chupetes", "price": 3.5, "picture": "imgs/carrito_chupetes.jpg", "desc": "Producto de nuestra tienda sobre carritos y chupetes"
+    }
+]

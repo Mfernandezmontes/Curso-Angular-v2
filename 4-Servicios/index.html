@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row" ng-controller="serviceController">
+        <h1 class="heading text-center">
+            Informacion de factoria
+        </h1><hr>
+        <ul class="panel panel-info">
+            <li ng-repeat="usuario in usuarios">
+                <p>Id: {{ usuario.id }} Nombre: {{ usuario.nombre}} Edad:{{usuario.edad}} </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE  html>
+<html lang="es" ng-app="app">
+    <head>
+    <meta charset="utf-8">
+        <title>Vídeo 14 de AngularJS, paginación</title>
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />    
+        <link data-require="bootstrap-css@2.3.2" data-semver="2.3.2" 
+          rel="stylesheet" 
+          href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+         
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <style type="text/css">
+            h2, h3{
+                text-align: center;
+            }
+            .pagination a{
+                cursor: pointer;
+            }
+            ul li{
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ng-controller="PaginacionController">
+            <div class="row">
+                <h1 class="heading text-center">Paginación con AngularJS y ui.bootstrap</h1><hr>
+                <div class="col-md-12 well">
+                    <h3>Paginación de {{ results.length }} resultados</h3>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <ul>
+                        <li class="alert alert-info" ng-repeat="fila in total">
+                            Id: {{fila.id}} Autor: {{fila.autor}} Titulo: {{fila.titulo}}
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-7 col-md-offset-3">
+                    <div data-pagination="" data-num-pages="numPages()"
+                        data-current-page="currentPage"
+                        data-max-size="showLinks"
+                        data-boundary-links="true"
+                        previous-text="Anterior"
+                        next-text="Siguiente"
+                        first-text="Primera"
+                        last-text="Última">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

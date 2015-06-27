@@ -1,0 +1,62 @@
+<!DOCTYPE  html>
+<html lang="es" ng-app="app">
+    <head>
+    <meta charset="utf-8">
+        <title>Vídeo 8 sobre Angularjs, trabajando con el objecto $resource</title>
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div class="container" ng-controller="homeController">
+            <div class="row">
+                <h1 class="heading text-center">Información utilizando el objeto $resource</h1>
+
+                Realizar una búsqueda: <input ng-model="searchText" class="form-control"><hr>
+                <table class="table" id="searchTextResults">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Teléfono</th>
+                      <th>Edad</th>
+                  </tr>
+                  <tr ng-repeat="usuario in usuarios | filter:searchText">
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.telefono}}</td>
+                    <td>{{usuario.edad}}</td>
+                  </tr>
+                </table>
+                <hr>
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Buscar por cualquiera</label>
+                    <input ng-model="search.$">
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre">Buscar por nombre</label>
+                    <input name="nombre" ng-model="search.nombre">
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre">Buscar por teléfono</label>
+                    <input ng-model="search.telefono"><br>
+                  </div>
+                    <div class="form-group">
+                        <label for="nombre">Buscar por Edad</label>
+                        <input ng-model="search.edad"><br>
+                    </div>
+                </form>
+                <table id="searchObjResults" class="table">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Teléfono</th>
+                      <th>Edad</th>
+                  </tr>
+                  <tr ng-repeat="usuario in usuarios | filter:search:strict">
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.telefono}}</td>
+                    <td>{{usuario.edad}}</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
